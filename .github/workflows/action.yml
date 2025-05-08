@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run normal CI
-        run: echo "Running normal CI"
+        run: echo "Running normal CI - using ubuntu"
 
   pull_request_ci:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'push' }}
     steps:
       - name: Run PR CI
-        run: echo "Running PR only CI"
+        run: echo "final version"
